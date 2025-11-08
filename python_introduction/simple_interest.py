@@ -6,4 +6,4 @@ P = principal
 R = rate
 T = time
 interest = float(P * R * T)
-print("The simple interest is", interest)
+print("The simple interest is:", interest)
