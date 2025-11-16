@@ -1,12 +1,12 @@
-task = input("Input a task description:" )
-priority = input("Enter task's priority (high/medium/low):" )
-TimeBound = input("Is the task time-bound? (yes/no):" )
-match priority:
+Task = input("Enter your task:" )
+TimeBound = input("Is it time-bound? (yes/no):" )
+Priority = input("Priority (high/medium/low):" )
+match Priority:
     case "high":
-        print("'", task, "' is a high priority task that requires immediate attention today!")
+        print("'", Task, "' is a high priority task that requires immediate attention today!")
     case "medium":
-        print("'", task, "' is a medium priority task. Consider completing it after you're done with the high priority tasks for the day!")
+        print("'", Task, "' is a medium priority task. Consider completing it after you're done with the high priority tasks for the day!")
     case "low":
-        print("'", task, "' is a low priority task. Consider completing it when you have free time.")
+        print("'", Task, "' is a low priority task. Consider completing it when you have free time.")
 if TimeBound == "yes":
     print("This is also a time-bound task. Complete it as a soon as possible!")
